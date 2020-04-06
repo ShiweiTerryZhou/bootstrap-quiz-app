@@ -1,0 +1,223 @@
+{
+	"MCATvocabs": [
+		{
+			"word": "aback",
+			"definition": "unexpected",
+			"definitionC": "",
+			"id":"1",
+			"star":"0"
+		},
+		{
+			"word": "abase",
+			"definition": "degrade",
+			"definitionC": "",
+			"id":"2",
+			"star":"0"
+		},
+		{
+			"word": "abet",
+			"definition": "aid",
+			"definitionC": "",
+			"id":"3",
+			"star":"0"
+		},
+		{
+			"word": "wretched",
+			"definition": "miserable",
+			"definitionC": "",
+			"id":"4",
+			"star":"0"
+		},
+		{
+			"word": "addle",
+			"definition": "confuse",
+			"definitionC": "",
+			"id":"5",
+			"star":"0"
+		},
+		{
+			"word": "renounce",
+			"definition": "give up",
+			"definitionC": "",
+			"id":"6",
+			"star":"0"
+		},
+		{
+			"word": "tribute",
+			"definition": "praise",
+			"definitionC": "",
+			"id":"7",
+			"star":"0"
+		},
+		{
+			"word": "concrete",
+			"definition": "tangible",
+			"definitionC": "",
+			"id":"8",
+			"star":"0"
+		},
+		{
+			"word": "chasm",
+			"definition": "hole",
+			"definitionC": "",
+			"id":"9",
+			"star":"0"
+		},
+		{
+			"word": "mitigate",
+			"definition": "assuage",
+			"definitionC": "",
+			"id":"10",
+			"star":"0"
+		},
+		{
+			"word": "derision",
+			"definition": "ridicule",
+			"definitionC": "",
+			"id":"11",
+			"star":"0"
+		},
+		{
+			"word": "interpose",
+			"definition": "interrupt",
+			"definitionC": "",
+			"id":"12",
+			"star":"0"
+		},
+		{
+			"word": "spurious",
+			"definition": "false",
+			"definitionC": "",
+			"id":"13",
+			"star":"0"
+		},
+		{
+			"word": "bilk",
+			"definition": "cheat",
+			"definitionC": "",
+			"id":"14",
+			"star":"0"
+		},
+		{
+			"word": "levity",
+			"definition": "casual",
+			"definitionC": "",
+			"id":"15",
+			"star":"0"
+		},
+		{
+			"word": "castigate",
+			"definition": "reprimand",
+			"definitionC": "",
+			"id":"16",
+			"star":"0"
+		},
+		{
+			"word": "mendacious",
+			"definition": "dishonest",
+			"definitionC": "",
+			"id":"17",
+			"star":"0"
+		},
+		{
+			"word": "blithe",
+			"definition": "happy",
+			"definitionC": "",
+			"id":"18",
+			"star":"0"
+		},
+		{
+			"word": "billow",
+			"definition": "surging",
+			"definitionC": "",
+			"id":"19",
+			"star":"0"
+		},
+		{
+			"word": "wry",
+			"definition": "mocking",
+			"definitionC": "",
+			"id":"20",
+			"star":"0"
+		}
+	],
+	"WrongVocabs": [
+		{
+			"word": "beautiful"		
+		},
+		{
+			"word": "love"		
+		},
+		{
+			"word": "considerate"		
+		},
+		{
+			"word": "truthful"		
+		},
+		{
+			"word": "sympathize"		
+		},
+		{
+			"word": "alert"		
+		},
+		{
+			"word": "retaliate"		
+		},
+		{
+			"word": "open"		
+		},
+		{
+			"word": "lackluster"		
+		},
+		{
+			"word": "saturate"		
+		},
+		{
+			"word": "stubborn"		
+		},
+		{
+			"word": "enchanted"		
+		},
+		{
+			"word": "arrogant"		
+		},
+		{
+			"word": "selfish"		
+		},
+		{
+			"word": "elegant"		
+		},
+		{
+			"word": "soulful"		
+		},
+		{
+			"word": "bland"		
+		},
+		{
+			"word": "innocuous"		
+		},
+		{
+			"word": "expressive"		
+		},
+		{
+			"word": "happy"
+		},
+		{
+			"word": "correct"
+		},
+		{
+			"word": "pursuasive"	
+		},
+		{
+			"word": "dangerous"
+		},
+		{
+			"word": "nice"
+		}
+	],
+	"ListData": [
+		{
+			"size":"24"
+		}
+	]
+}

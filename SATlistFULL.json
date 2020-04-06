@@ -1,0 +1,169 @@
+{
+	"SATvocabs": [
+		{
+			"word": "abhor",
+			"definition": "hate",
+			"definitionC": "",
+			"id":"1",
+			"star":"0"
+		},
+		{
+			"word": "bigot",
+			"definition": "narrow-minded",
+			"definitionC": "",
+			"id":"2",
+			"star":"0"	
+		},
+		{
+			"word": "counterfeit",
+			"definition": "fake",
+			"definitionC": "",
+			"id":"3",
+			"star":"0"	
+		},
+		{
+			"word": "hamper",
+			"definition": "hinder",
+			"definitionC": "",
+			"id":"4",
+			"star":"0"		
+		},
+		{
+			"word": "noxious",
+			"definition": "poisonous",
+			"definitionC": "",
+			"id":"5",
+			"star":"0"
+		},
+		{
+			"word": "placid",
+			"definition": "calm",
+			"definitionC": "",
+			"id":"6",
+			"star":"0"
+		},
+		{
+			"word": "abrasive",
+			"definition": "rough",
+			"definitionC": "",
+			"id":"7",
+			"star":"0"
+		},
+		{
+			"word": "covert",
+			"definition": "undercover",
+			"definitionC": "",
+			"id":"8",
+			"star":"0"
+		},
+		{
+			"word": "bilk",
+			"definition": "cheat",
+			"definitionC": "",
+			"id":"9",
+			"star":"0"
+		},
+		{
+			"word": "engender",
+			"definition": "cause",
+			"definitionC": "",
+			"id":"10",
+			"star":"0"
+		},
+		{
+			"word": "knotty",
+			"definition": "complex",
+			"definitionC": "",
+			"id":"11",
+			"star":"0"
+		},
+		{
+			"word": "renown",
+			"definition": "fame",
+			"definitionC": "",
+			"id":"12",
+			"star":"0"
+		},
+		{
+			"word": "abasement",
+			"definition": "humiliation",
+			"definitionC": "",
+			"id":"13",
+			"star":"0"
+		},
+		{
+			"word": "replete",
+			"definition": "full",
+			"definitionC": "",
+			"id":"14",
+			"star":"0"
+		},
+		{
+			"word": "enhance",
+			"definition": "improve",
+			"definitionC": "",
+			"id":"15",
+			"star":"0"
+		},
+		{
+			"word": "enigma",
+			"definition": "puzzle",
+			"definitionC": "",
+			"id":"16",
+			"star":"0"
+		},
+		{
+			"word": "affable",
+			"definition": "friendly",
+			"definitionC": "",
+			"id":"17",
+			"star":"0"
+		},
+		{
+			"word": "tardy",
+			"definition": "late",
+			"definitionC": "",
+			"id":"18",
+			"star":"0"
+		},
+		{
+			"word": "reprehensible",
+			"definition": "shameful",
+			"definitionC": "",
+			"id":"19",
+			"star":"0"
+		},
+		{
+			"word": "obdurate",
+			"definition": "stubborn",
+			"definitionC": "",
+			"id":"20",
+			"star":"0"
+		}
+	],
+	"WrongVocabs": [
+		{
+			"word": "beautiful"		
+		},
+		{
+			"word": "happy"
+		},
+		{
+			"word": "correct"
+		},
+		{
+			"word": "pursuasive"	
+		},
+		{
+			"word": "dangerous"
+		},
+		{
+			"word": "nice"
+		}
+	],
+	"ListData": [
+		{
+			"size":"20"
+		}
+	]
+}

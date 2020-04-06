@@ -1,0 +1,127 @@
+<html>
+<head>
+	<script
+	  src="https://code.jquery.com/jquery-3.1.1.min.js"
+	  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+	  crossorigin="anonymous"></script>
+	<script src="semantic/dist/semantic.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+  <div class="ui menu">
+    <a class="item" href=/>
+      Home
+    </a>
+    <div class="ui pointing dropdown link item">
+      <span class="text">Account</span>
+      <i class="dropdown icon"></i>
+      <div class="menu">
+        <div class="item">
+          <i class="dropdown icon"></i>
+          <span class="text">Quick Link</span>
+          <div class="menu">
+            <div class="header">Study List</div>
+              <a href=SATlist><div class="item">SAT</div></a>
+              <a href=SATlist><div class="item">GRE</div></a>
+              <a href=SATlist><div class="item">IELTS</div></a>
+              <a href=SATlist><div class="item">TOEFL</div></a>
+            <div class="divider"></div>
+          </div>
+        </div>
+        <div class="item">
+          <p class="facebookLogin">
+        <fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
+        </fb:login-button>
+      </p>
+        </div>
+      </div>
+    </div>
+    <a class="item" href=tutorial>
+      Help
+    </a>
+    <a class="item" href=reminder>
+      Study Reminder
+    </a>
+  </div>
+
+  <div class="ui styled accordion">
+  <div class="title">
+    <i class="dropdown icon"></i>
+    How do I set reminders?
+  </div>
+  <div class="content">
+    <p>Go into the “Study Reminder” section of the application. There, you can customize the frequency, time, and method of receiving reminders.</p>
+  </div>
+    <div class="title">
+    <i class="dropdown icon"></i>
+    How do I know if the reminder has been saved?
+  </div>
+  <div class="content">
+    <p>There should be a pop up to notify you that it has been saved. If you see this, you are good to go!</p>
+  </div>
+    <div class="title">
+    <i class="dropdown icon"></i>
+    How do you pick a reminder time?
+  </div>
+  <div class="content">
+    <p>If you are on a mobile device, scroll down to select the hour, minutes, and AM or PM. If you are on a desktop, you have two options. You can directly type in a two digit hour, two digit minutes, and PM or AM. Conversely, you can click on each of the three sections and use the arrows located on the right side of the bar to manually select each section. Note: if you are picking a time under 10, add a 0 to the front. For example, 9 becomes 09.</p>
+  </div>
+    <div class="title">
+    <i class="dropdown icon"></i>
+    When I click days or methods, why does it autoclick all the options?
+  </div>
+  <div class="content">
+    <p>This was done to make it easier for our users to easily choose multiple options.</p>
+  </div>
+    <div class="title">
+    <i class="dropdown icon"></i>
+    How long should I study?
+  </div>
+  <div class="content">
+    <p>We recommend you for at least 10-20 minutes per session to get the best results from every session.</p>
+  </div>
+      <div class="title">
+    <i class="dropdown icon"></i>
+   When is the best time to study?
+  </div>
+  <div class="content">
+    <p>This depends on your studying schedule. Some users prefer to start off their day with a quick study session, while others prefer it before bed. Pick a time when you know you’ll typically be free for a session.</p>
+  </div>
+        <div class="title">
+    <i class="dropdown icon"></i>
+   How often should I study?
+  </div>
+  <div class="content">
+    <p>We recommend you study once a day for at least 4 weeks for good results.</p>
+  </div>
+        <div class="title">
+    <i class="dropdown icon"></i>
+   How do I view all the words in my list?
+  </div>
+  <div class="content">
+    <p>There are two ways to do this. The first way is to go to the “Manage” page through Home. Then, click on the name of the list that you want to view. The second way is to click, “Account” in the navigation bar, then “Quick Link”. You should find the name of your list in the drop-down function.</p>
+  </div>
+
+
+
+	<script type="text/javascript">
+		var login_status = false;
+		$('.ui.pointing.dropdown.link.item').dropdown();
+    //accordian JS
+    $('.accordion')
+      .accordion({
+        selector: {
+          trigger: '.title'
+        }
+      })
+    ;
+	</script>
+
+</body>
+  <script src="/js/jquery-1.11.0.js"></script>
+  <script src="/js/bootstrap.js"></script>
+  <script src="/js/bootstrap.min.js"></script>
+</html>

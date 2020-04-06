@@ -1,0 +1,130 @@
+<html>
+<head>
+	<script
+	  src="https://code.jquery.com/jquery-3.1.1.min.js"
+	  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+	  crossorigin="anonymous"></script>
+	<script src="semantic/dist/semantic.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+	<div class="ui menu">
+	  <a class="item" href=/>
+	    Home
+	  </a>
+	  <div class="ui pointing dropdown link item">
+	    <span class="text">Account</span>
+	    <i class="dropdown icon"></i>
+	    <div class="menu">
+	      <div class="item">
+	        <i class="dropdown icon"></i>
+	        <span class="text">Quick Link</span>
+	        <div class="menu">
+	          <div class="header">Study List</div>
+	            <a href=SATlist><div class="item">SAT</div></a>
+	            <a href=SATlist><div class="item">GRE</div></a>
+	            <a href=SATlist><div class="item">IELTS</div></a>
+	            <a href=SATlist><div class="item">TOEFL</div></a>
+	          <div class="divider"></div>
+	        </div>
+	      </div>
+	      <div class="item">
+	      	<p class="facebookLogin">
+				<fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
+				</fb:login-button>
+			</p>
+	      </div>
+	    </div>
+	  </div>
+	  <a class="item" href=tutorial>
+	    Help
+	  </a>
+	  <a class="item" href=reminder>
+	    Study Reminder
+	  </a>
+	</div>
+
+	<div class="ui center aligned one column grid">
+	  <div class="row">
+	    <div class="column">
+	        <div class="header item">
+	          <h1>VocaBuddy</h1>
+	        </div>
+	    </div>
+	  </div>
+	</div>
+	<br /><br /><br /><br />
+	<div class="ui center aligned two row grid">
+		<div class="row">
+			<div class="left floated right floated six wide column">
+				<h2 class="ui center aligned icon header">
+					<div class="ui segment">
+						<a href=Study>
+  							<i class="trophy icon"></i>
+  							Study Mode
+  						</a>
+  					</div>
+				</h2>
+			</div>
+		</div>
+		<div class="row">
+			<div class="left floated right floated six wide column">
+				<h2 class="ui center aligned icon header">
+					<div class="ui segment">
+						<a href=Manage>
+  							<i class="edit icon"></i>
+  							Review Mode
+  						</a>
+  					</div>
+				</h2>
+			</div>
+		</div>
+	</div>
+
+	<div class="ui modal" id="login">
+	  <div class="header">
+	    Log In:
+	  </div>
+	  <div class="image content">
+	    <div class="description">	       
+			<form class="ui form">
+			  <div class="field">
+			    <label>User Name</label>
+			    <input type="text" name="first-name" placeholder="First Name">
+			  </div>
+			  <div class="field">
+			    <label>Password</label>
+			    <input type="text" name="last-name" placeholder="Last Name">
+			  </div>
+			</form>
+	    </div>
+	  </div>
+	  <div class="actions">
+	    	<div class="ui black deny button">
+	    	  Guest Session
+	    	</div>
+	    	<div class="ui positive right labeled icon button" i="login">
+	    	  Log In
+	    	  <i class="checkmark icon"></i>
+	    	</div>
+	    <br />
+	  </div>
+	</div>
+
+
+	<script type="text/javascript">
+		var login_status = false;
+		$('.ui.pointing.dropdown.link.item').dropdown();
+		//login
+		$('.ui.modal').modal('setting', 'closable', false).modal('false');
+	</script>
+	<script src="https://code.jquery.com/jquery.js"></script>
+	<script src="/js/bootstrap.min.js"></script>
+	{{> facebook}}
+	<script src="/js/facebook.js"></script>
+
+</body>
+</html>

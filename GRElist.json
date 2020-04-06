@@ -1,0 +1,229 @@
+{
+	"GREvocabs": [
+		{
+			"word": "opprobrious",
+			"definition": "offensive",
+			"definitionC": "",
+			"id":"1",
+			"star":"0"
+		},
+		{
+			"word": "abash",
+			"definition": "embarrassed",
+			"definitionC": "",
+			"id":"2",
+			"star":"0"
+		},
+		{
+			"word": "abate",
+			"definition": "subside",
+			"definitionC": "",
+			"id":"3",
+			"star":"0"
+		},
+		{
+			"word": "abdicate",
+			"definition": "resign",
+			"definitionC": "",
+			"id":"4",
+			"star":"0"
+		},
+		{
+			"word": "impugn",
+			"definition": "question",
+			"definitionC": "",
+			"id":"5",
+			"star":"0"
+		},
+		{
+			"word": "laud",
+			"definition": "praise",
+			"definitionC": "",
+			"id":"6",
+			"star":"0"
+		},
+		{
+			"word": "exalt",
+			"definition": "glorify",
+			"definitionC": "",
+			"id":"7",
+			"star":"0"
+		},
+		{
+			"word": "befuddle",
+			"definition": "perplex",
+			"definitionC": "",
+			"id":"8",
+			"star":"0"
+		},
+		{
+			"word": "ersatz",
+			"definition": "artificial",
+			"definitionC": "",
+			"id":"9",
+			"star":"0"
+		},
+		{
+			"word": "bogus",
+			"definition": "fraudulent",
+			"definitionC": "",
+			"id":"10",
+			"star":"0"
+		},
+		{
+			"word": "redolent",
+			"definition": "evocative",
+			"definitionC": "",
+			"id":"11",
+			"star":"0"
+		},
+		{
+			"word": "lewd",
+			"definition": "salacious",
+			"definitionC": "",
+			"id":"12",
+			"star":"0"
+		},
+		{
+			"word": "abhorrent",
+			"definition": "obscene",
+			"definitionC": "",
+			"id":"13",
+			"star":"0"
+		},
+		{
+			"word": "champion",
+			"definition": "defend",
+			"definitionC": "",
+			"id":"14",
+			"star":"0"
+		},
+		{
+			"word": "urbane",
+			"definition": "refined",
+			"definitionC": "",
+			"id":"15",
+			"star":"0"
+		},
+		{
+			"word": "courteous",
+			"definition": "polite",
+			"definitionC": "",
+			"id":"16",
+			"star":"0"
+		},
+		{
+			"word": "boorish",
+			"definition": "ill-mannered",
+			"definitionC": "",
+			"id":"17",
+			"star":"0"
+		},
+		{
+			"word": "comity",
+			"definition": "courtesy",
+			"definitionC": "",
+			"id":"18",
+			"star":"0"
+		},
+		{
+			"word": "concord",
+			"definition": "agreement",
+			"definitionC": "",
+			"id":"19",
+			"star":"0"
+		},
+		{
+			"word": "dissension",
+			"definition": "disagreement",
+			"definitionC": "",
+			"id":"20",
+			"star":"0"
+		}
+	],
+	"WrongVocabs": [
+		{
+			"word": "beautiful"		
+		},
+		{
+			"word": "happy"
+		},
+		{
+			"word": "correct"
+		},
+		{
+			"word": "pursuasive"	
+		},
+		{
+			"word": "empty"		
+		},
+		{
+			"word": "repurpose"		
+		},
+		{
+			"word": "help"		
+		},
+		{
+			"word": "abandonment"		
+		},
+		{
+			"word": "rough"		
+		},
+		{
+			"word": "melt"		
+		},
+		{
+			"word": "encourage"		
+		},
+		{
+			"word": "defiant"		
+		},
+		{
+			"word": "thoughtful"		
+		},
+		{
+			"word": "early"		
+		},
+		{
+			"word": "subjective"		
+		},
+		{
+			"word": "kind"		
+		},
+		{
+			"word": "gentle"		
+		},
+		{
+			"word": "absent"		
+		},
+		{
+			"word": "sincere"		
+		},
+		{
+			"word": "sweet"		
+		},
+		{
+			"word": "nonchalant"		
+		},
+		{
+			"word": "complex"		
+		},
+		{
+			"word": "robust"		
+		},
+		{
+			"word": "terrible"		
+		},
+		{
+			"word": "dangerous"
+		},
+		{
+			"word": "nice"
+		}
+	],
+	"ListData": [
+		{
+			"size":"26"
+		}
+	]
+}

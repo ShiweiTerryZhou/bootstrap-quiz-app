@@ -1,0 +1,202 @@
+{
+	"LSATvocabs": [
+		{
+			"word": "infer",
+			"definition": "deduce",
+			"definitionC": "",
+			"id":"1",
+			"star":"0"
+		},
+		{
+			"word": "undermines",
+			"definition": "weakens",
+			"definitionC": "",
+			"id":"2",
+			"star":"0"
+		},
+		{
+			"word": "framework",
+			"definition": "structure",
+			"definitionC": "",
+			"id":"3",
+			"star":"0"
+		},
+		{
+			"word": "invariably",
+			"definition": "always",
+			"definitionC": "",
+			"id":"4",
+			"star":"0"
+		},
+		{
+			"word": "indigenous",
+			"definition": "native",
+			"definitionC": "",
+			"id":"5",
+			"star":"0"
+		},
+		{
+			"word": "anomalous",
+			"definition": "irregular",
+			"definitionC": "",
+			"id":"6",
+			"star":"0"
+		},
+		{
+			"word": "alleviate",
+			"definition": "better",
+			"definitionC": "",
+			"id":"7",
+			"star":"0"
+		},
+		{
+			"word": "ephemeral",
+			"definition": "fleeting",
+			"definitionC": "",
+			"id":"8",
+			"star":"0"
+		},
+		{
+			"word": "corroborate",
+			"definition": "confirm",
+			"definitionC": "",
+			"id":"9",
+			"star":"0"
+		},
+		{
+			"word": "implicit",
+			"definition": "implied",
+			"definitionC": "",
+			"id":"10",
+			"star":"0"
+		},
+		{
+			"word": "feign",
+			"definition": "pretend",
+			"definitionC": "",
+			"id":"11",
+			"star":"0"
+		},
+		{
+			"word": "equivocation",
+			"definition": "ambiguity",
+			"definitionC": "",
+			"id":"12",
+			"star":"0"
+		},
+		{
+			"word": "evaluate",
+			"definition": "judge",
+			"definitionC": "",
+			"id":"13",
+			"star":"0"
+		},
+		{
+			"word": "concede",
+			"definition": "admit",
+			"definitionC": "",
+			"id":"14",
+			"star":"0"
+		},
+		{
+			"word": "explicate",
+			"definition": "explain",
+			"definitionC": "",
+			"id":"15",
+			"star":"0"
+		},
+		{
+			"word": "variance",
+			"definition": "difference",
+			"definitionC": "",
+			"id":"16",
+			"star":"0"
+		},
+		{
+			"word": "incompatible",
+			"definition": "unsuited",
+			"definitionC": "",
+			"id":"17",
+			"star":"0"
+		},
+		{
+			"word": "incontrovertible",
+			"definition": "certain",
+			"definitionC": "",
+			"id":"18",
+			"star":"0"
+		},
+		{
+			"word": "sanction",
+			"definition": "agree",
+			"definitionC": "",
+			"id":"19",
+			"star":"0"
+		},
+		{
+			"word": "proposition",
+			"definition": "statement",
+			"definitionC": "",
+			"id":"20",
+			"star":"0"
+		}
+	],
+	"WrongVocabs": [
+		{
+			"word": "beautiful"		
+		},
+		{
+			"word": "happy"
+		},
+		{
+			"word": "correct"
+		},
+		{
+			"word": "pursuasive"	
+		},
+		{
+			"word": "dangerous"
+		},
+		{
+			"word": "interesting"		
+		},
+		{
+			"word": "acidic"		
+		},
+		{
+			"word": "sharp"		
+		},
+		{
+			"word": "dull"		
+		},
+		{
+			"word": "tender"		
+		},
+		{
+			"word": "shallow"		
+		},
+		{
+			"word": "ashamed"		
+		},
+		{
+			"word": "homely"		
+		},
+		{
+			"word": "average"		
+		},
+		{
+			"word": "bright"		
+		},
+		{
+			"word": "helpless"		
+		},
+		{
+			"word": "nice"
+		}
+	],
+	"ListData": [
+		{
+			"size":"17"
+		}
+	]
+}

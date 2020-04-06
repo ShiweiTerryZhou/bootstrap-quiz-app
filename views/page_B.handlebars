@@ -1,0 +1,240 @@
+<html>
+<head>
+	<!-- Google Analytics -->
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-115291841-1', 'auto');
+ga('send', 'pageview');
+</script>
+<!-- End Google Analytics -->
+
+	<script
+	  src="https://code.jquery.com/jquery-3.1.1.min.js"
+	  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+	  crossorigin="anonymous"></script>
+	<script src="semantic/dist/semantic.min.js"></script>
+	<script src="js/notify.js"></script>
+	<link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+  <body>
+	<div class="ui menu">
+	  <a class="item" href=/>
+	    Home
+	  </a>
+	  <div class="ui pointing dropdown link item">
+	    <span class="text" id="username">Guest</span>
+	    <i class="dropdown icon"></i>
+	    <div class="menu">
+	      <div class="item">
+	        <i class="dropdown icon"></i>
+	        <span class="text">Quick Link</span>
+	        <div class="menu">
+	          <div class="header">Study List</div>
+	          <a href=SATlist><div class="item">SAT</div></a>
+	          <a href=SATlist><div class="item">GRE</div></a>
+	          <a href=SATlist><div class="item">IELTS</div></a>
+	          <a href=SATlist><div class="item">TOEFL</div></a>
+	          <div class="divider"></div>
+	        </div>
+	      </div>
+	    </div>
+	  </div>
+	  <a class="item" href=tutorial>
+	    Help
+	  </a>
+	  <a class="item" href=reminder>
+	    Study Reminder
+	  </a>
+	</div>
+
+	<div class="overlay" style="display: none;"></div>
+
+	<div class="ui modal" id=0>
+	  <div class="header">
+	    Study Session Complete
+	  </div>
+	  <div class="image content">
+	    <div class="description">
+	    <p>You just complete your study session, your score is 
+	    	<h3 id='score'></h3>
+	    </p>     
+	    </div>
+	  </div>
+	  <div class="actions">
+	  	<a href=Study>
+	    	<div class="ui black deny button">
+	    	  return to study menu
+	    	</div>
+		</a>
+		<a href=SATlist>
+	    	<div class="ui positive right labeled icon button">
+	    	  review full list
+	    	  <i class="checkmark icon"></i>
+	    	</div>
+	    </a>
+	    <div class="ui positive button">
+	    	  review what you get wrong
+	    </div>
+	    <br />
+	  </div>
+	</div>
+
+	<br/><br/><br/><br/><br/>
+	<div class="wrongList"><div>
+	{{#each SATvocabs}}
+	<div class="ui modal" id={{id}}>
+	  <div class="header">
+	    {{id}} questions left:
+	  </div>
+	  <div class="image content">
+	    <div class="description">
+	    	<p>Choose the correct definition of the word: <h3>{{word}}</h3></p>
+			<div class="ui form">
+			  <div class="grouped fields">
+			  	<label>Select your answer:</label>
+			  </div>
+			</div>
+	    </div>
+	  </div>
+	  <div class="actions" id="shuffle">
+			<div class="ui fluid black deny button" id="correct" index="{{id}}" style="width:200px">
+  				{{definition}}
+			</div>
+			<div class="ui fluid black deny button" id="incorrect1-{{id}}"" index="{{id}}" style="width:200px">
+  				Orange
+			</div>
+			<div class="ui fluid black deny button" id="incorrect2-{{id}}" index="{{id}}" style="width:200px">
+  				Beautiful
+			</div>
+			<div class="ui fluid black deny button" id="incorrect3-{{id}}" index="{{id}}" style="width:200px">
+  				Sad
+			</div>
+	    <!-- <div class="ui positive right labeled icon button" id="nextButton">
+	      Skip
+	      <i class="checkmark icon"></i> -->
+	    </div>
+	  </div>
+	</div>
+	{{/each}}
+
+
+
+
+	<script type="text/javascript">
+		//google analysis action
+		$('.overlay').on('click', function() {
+			ga("send", "event", "exit", "click");
+		});
+		//shuffle algorithm
+		$.fn.shuffleChildren = function() {
+		    $.each(this.get(), function(index, el) {
+		        var $el = $(el);
+		        var $find = $el.children();
+
+		        $find.sort(function() {
+		            return 0.5 - Math.random();
+		        });
+
+		        $el.empty();
+		        $find.appendTo($el);
+		    });
+		};
+
+		$('.modal>#shuffle').shuffleChildren();
+		//drop down animation in menu
+		$('.ui.pointing.dropdown.link.item').dropdown();
+		//animation for quiz slides
+		$('.ui.modal').modal('setting', 'closable', true).modal('show');
+		//parse JSON
+		var jasonobj;
+		$.get("https://a9-vocabuddy.herokuapp.com/lists/SAT", function(result){
+		//$.get("http://localhost:3000/lists/SAT", function(result){
+			console.log(result["ListData"][0]);
+			jasonobj = result["WrongVocabs"];
+			//rendering worng options
+			var wrongsize = result["ListData"][1]["wrongsize"];
+			var listsize = result["ListData"][0]["size"];
+			for(var j=1; j<=listsize; j++){
+				for (var k=1; k<=3; k++){
+					$('.black.deny.button#incorrect'+k+"-"+j)
+					.html(result["WrongVocabs"][Math.floor(Math.random()*1000%wrongsize)]["word"]);
+				}
+			}
+		});
+		var counter = 0;
+		var i = 0;
+
+		//counter action when clicked on correct answer and incorrect answer
+		var tablelist="";
+		for(i=1; i<=10; i++){
+			//correct button action
+			$('#'+i+' #correct.button').click(function(){
+				counter = counter+1;
+				$('#score').html(counter+"/10");
+				//alert("CORRECT!");
+				$.notify("CORRECT","success");
+				console.log(counter);
+			});
+			//incorrect button action
+			$('#'+i+' '+'[id^=incorrect]'+'.button').click(function(){
+				//alert("EMMM...INCORRECT");
+				$.notify("INCORRECT","warn");
+				var index = $(this).attr("index")-1;
+				$.get("https://a9-vocabuddy.herokuapp.com/lists/SAT", function(result){
+				//$.post("http://localhost:3000/lists/SAT", function(result){
+					if(result["SATvocabs"][index]["star"]==0){
+						result.starWords.push(result["SATvocabs"][index]);
+					}
+					result["SATvocabs"][index]["star"]=1;
+					console.log(result["SATvocabs"][index]);
+					console.log(result["starWords"]);
+					//overwirte to server
+					$.ajax
+					    ({
+					        type: "POST",
+					        dataType : 'json',
+					        async: true,
+					        url:'https://a9-vocabuddy.herokuapp.com/lists/SAT',
+					        //url: 'http://localhost:3000/lists/SAT',
+					        data: { data: JSON.stringify(result) },
+					        success: function () {},
+					        failure: function() {}
+					    });
+					//update the summary page
+					$(".wrongList").html(
+						function(){
+							tablelist = tablelist +		      	
+								"<tr>" +
+							    "<td>"+result["SATvocabs"][index]["word"]+"</td>"+
+							    "<td>"+result["SATvocabs"][index]["definition"]+"</td>"+
+							    "</tr>";
+							console.log(tablelist);
+							var finalhtml = 
+								"<table class='ui celled unstackable table'>"+
+								  "<thead>"+
+								    "<tr>"+
+								    	"<th>Word</th>"+
+								    	"<th>Definition</th>"+
+								  	"</tr></thead>"+
+								  "<tbody>"+
+									tablelist+
+								  "</tbody>"+
+								  "<tfoot></tfoot>"+
+								"</table>";
+							console.log(finalhtml);
+							return finalhtml;
+						}
+					);
+				});
+				$('#score').html(counter+"/10");
+			});
+		}
+
+	</script>
+  </body>
+</html>

@@ -1,0 +1,158 @@
+{
+	"SATvocabs": [
+		{
+			"word": "abhor",
+			"definition": "hate",
+			"definitionC": "",
+			"id":"1",
+			"star":"0"
+		},
+		{
+			"word": "bigot",
+			"definition": "narrow-minded",
+			"definitionC": "",
+			"id":"2",
+			"star":"0"	
+		},
+		{
+			"word": "counterfeit",
+			"definition": "fake",
+			"definitionC": "",
+			"id":"3",
+			"star":"0"	
+		},
+		{
+			"word": "hamper",
+			"definition": "hinder",
+			"definitionC": "",
+			"id":"4",
+			"star":"0"		
+		},
+		{
+			"word": "noxious",
+			"definition": "poisonous",
+			"definitionC": "",
+			"id":"5",
+			"star":"0"
+		},
+		{
+			"word": "placid",
+			"definition": "calm",
+			"definitionC": "",
+			"id":"6",
+			"star":"0"
+		},
+		{
+			"word": "abrasive",
+			"definition": "rough",
+			"definitionC": "",
+			"id":"7",
+			"star":"0"
+		},
+		{
+			"word": "covert",
+			"definition": "undercover",
+			"definitionC": "",
+			"id":"8",
+			"star":"0"
+		},
+		{
+			"word": "bilk",
+			"definition": "cheat",
+			"definitionC": "",
+			"id":"9",
+			"star":"0"
+		},
+		{
+			"word": "engender",
+			"definition": "cause",
+			"definitionC": "",
+			"id":"10",
+			"star":"0"
+		}
+	],
+	"WrongVocabs": [
+		{
+			"word": "beautiful"		
+		},
+		{
+			"word": "love"		
+		},
+		{
+			"word": "considerate"		
+		},
+		{
+			"word": "truthful"		
+		},
+		{
+			"word": "sympathize"		
+		},
+		{
+			"word": "alert"		
+		},
+		{
+			"word": "retaliate"		
+		},
+		{
+			"word": "open"		
+		},
+		{
+			"word": "lackluster"		
+		},
+		{
+			"word": "saturate"		
+		},
+		{
+			"word": "stubborn"		
+		},
+		{
+			"word": "enchanted"		
+		},
+		{
+			"word": "arrogant"		
+		},
+		{
+			"word": "selfish"		
+		},
+		{
+			"word": "elegant"		
+		},
+		{
+			"word": "soulful"		
+		},
+		{
+			"word": "bland"		
+		},
+		{
+			"word": "innocuous"		
+		},
+		{
+			"word": "expressive"		
+		},
+		{
+			"word": "happy"
+		},
+		{
+			"word": "correct"
+		},
+		{
+			"word": "pursuasive"	
+		},
+		{
+			"word": "dangerous"
+		},
+		{
+			"word": "nice"
+		}
+	],
+	"ListData": [
+		{
+			"size":"10"
+		},
+		{
+			"wrongsize":"24"
+		}
+	],
+	"starWords": [
+	]
+}
